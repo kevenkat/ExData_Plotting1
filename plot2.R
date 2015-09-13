@@ -14,7 +14,7 @@ dtTime <- strptime(paste(sdt$Date, sdt$Time, sep=" "), "%d/%m/%Y %H:%M:%S")
 #create a png to be edited
 png("plot2.png", width=480, height=480)
 
-# create histogram
+# create plot
 plot(dtTime, globalActivePower, type="l", xlab="", ylab="Global Active Power (kilowatts)")
 
 #close file
